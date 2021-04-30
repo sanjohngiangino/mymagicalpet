@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>MyMagicalPet</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script type="text/javascript" lang="javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" lang="javascript" src="js/bootstrap.bundle.js"></script>
+    <script type="text/javascript" lang="javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" lang="javascript" src="login.js"></script>
+    </head>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+
+    <body class="text-center">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark " style="background-color: #641C34 ;">
+            <a class="navbar-brand" href="index.html">
+                <img src="immagini/logo_small.png" height="55px" alt="150px">
+                </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav mr-auto">
+              </ul>
+              <a href="paginaRegistrazione/registrazione.html" class="btn btn-outline-light btn-lg" role="button"><i class="fas fa-user-circle"></i> Registrati ora</a>               
+            </div>            
+        </nav>
+        
+        <br><br>
+                  <img src="immagini/logo_large.png" height="120" alt="">
+                  <br><br>
+
+
+        <!-- ======= Sezione Prodotti  ======= -->
+        <h3><strong>Adotta un animale fantastico!!</strong></h3>
+        <br>
+        <ul class="pagination justify-content-center">
+        <div class="row">
+                <div class="col-sm-4">
+                    <div class="card-flex-container" style="width: 18rem;"  >
+                            <img class="card-img-top" src="immagini/cucciolodidrago.jpg" alt="Card image cap" height="200px">
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>Cuccioli di Draghi</strong></h5>
+                                <p class="card-text">Dona una casa a un Cucciolo di Drago. Crescilo e Addestralo per poterlo cavalcare e divenire un Signore dei Draghi. Ci dissociamo dalla dieta del drago e da ogni forma di violenza causata dal cucciolo.</p>
+                                <div class="dropdown">  <!-- aiuta col layout -->
+                                  
+                                </div>
+                            </div>
+                        </div>
+                </div>
+              
+                <div class="col-sm-4">
+                    <div class="flex-container" style="width: 18rem;">
+                            <img class="card-img-top" src="immagini/poro.jpg" alt="Card image cap" height="200px">
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>Poro , Poro, Poro!!!</strong></h5>
+                                <p class="card-text">Originari delle terre gelate Freljord, I Poro sono piccoli esserini sferici ricoperti di pelo.        Purtroppo il riscaldamento globale, li ha portati a soffrire la fame. Sbrigati ad addottarne  uno e salviamo la loro specie!!</p>
+                                
+                            </div>
+                    </div>
+                </div>
+              
+                <div class="col-sm-4">
+                        <div class="flex-container" style="width: 18rem;">
+                                <img class="card-img-top" src="immagini/flerken.jpg" alt="Card image cap" height="200px">
+                                <div class="card-body">
+                                    <h5 class="card-title"><strong>Flerken</strong></h5>
+                                    <p class="card-text">Stufi di un semplice gatto? Adotta un Flerken, creature dotate di incredibili poteri: a differenza dei felini depositano uova, e sono dotati di zanne molto aguzze e tentacoli che permettono loro di fare a pezzi in pochi secondi qualsiasi preda. </p>
+                                    
+                                </div>
+                        </div>
+            </div>
+        </ul>
+
+        <a href="pagina_Catalogo/lista_Catalogo.html" class="btn btn-primary btn-lg" style="background-color: #641C34 " role="button">Clicca qui per adottare un MagicalPet!!</a>
+        <br><br><br>
+
+      
+        <!-- Fine sezione Prodotti -->
+                <!-- ======= Sezione Header  ======= -->
+                <div class="header">
+                  
+      
+                  <div class="formbox">
+            <form action="login.php" method="post">
+                      <form id="loginForm">        
+                          <div class="form-group">
+                            <h5><strong>LOGIN</strong></h5>
+                            <label>Inserisci username</label>
+                            <input type="text" class="form-control" id="inputUsername" placeholder="Username" name="username">
+                            <small class="form-text text-muted">Non condivideremo mai i tuoi dati.</small>
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Password" name="password"> 
+                          </div>
+              <button type="submit" class="btn btn-primary " style ="background-color: #641C34  "> Login </button>
+                      </form>
+              </form>
+                  </div>
+              </div>
+              <!-- Fine Header -->  
+
+        <br><br><br><br>
+
+
+      
+
+
+        <!-- ======= Sezione F.A.Q  ======= -->
+        <h4><strong>Frequently Asked Questions</strong> </h4>
+        <br>
+        <ul class="pagination justify-content-center">
+          <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    A cosa serve Shop-Pc
+                  </button>
+                </h2>
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  Shop-Pc è un portale che mette a disposizione un catalogo di componenti computer che possa permetterti di aggiornare o assemblare il tuo computer semplicemente.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Che cos'è una Cpu?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                  CPU è un acronimo che sta per central processing unit, cioè unità centrale di elaborazione. Sicuramente avrai sentito parlare anche di “processore” o “microprocessore”, che sono altri modi di definire la CPU. 
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Che cos'è una GPU?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  La GPU è un ottimo esempio di coprocessore. Cioè è un processore che funziona come supporto alla CPU di un computer, dedicandosi all’elaborazione e al rendering di immagini grafiche. 
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFour">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Che cos'è una mobo?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                <div class="card-body">
+                  La scheda madre è un circuito stampato (o PCB) ovvero un supporto che viene usato per connettere e mettere in comunicazione dei componenti in un circuito elettronico. 
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFive">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Che cos'è la RAM?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                <div class="card-body">
+                  La RAM è una memoria per computer ad accesso casuale, come puoi capire già dall’acronimo. RAM infatti sta per Random Access Memory, appunto memoria ad accesso casuale. 
+                </div>
+              </div>
+            </div>
+          </div>
+      </ul>
+    <!-- Fine sezione F.A.Q  -->
+    <br><br>
+
+        <!-- Sezione orizzontale per Aiuto -->
+        <div class="section clearfix" style="background-color: #eff3f6;">
+            <div class="container">
+                <div class="row lp-section-content clearfix">
+                    <div class="col-sm-12">
+                        <br>
+                        <h3>Non riesci a trovare un prodotto? </h3>
+                        <p>Scrivici per parlare con noi.</p>
+                        <div class="calltoaction-right-panel">
+                            <a href="mailto:info@shop-pc.com" class="btn btn-primary btn-lg" role="button">Contattaci ora!</a>
+                        </div>
+                        <br>
+                    </div>      
+                </div>     
+            </div>
+        </div>
+        <!-- Fine sezione aiuto-->
+        <br><br><br><br><br>
+
+        
+      <!-- Footer -->
+      <footer class="page-footer font-small white">
+          <div class="footer-copyright text-center py-3"  style="background-color: #641C34 ;"><strong>Grazie ai signori</strong> John e Giorgio
+            </div>
+        </footer>
+        <!-- Fine Footer -->
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+            
+    </body>   
+</html>
