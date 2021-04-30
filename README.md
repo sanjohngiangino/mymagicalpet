@@ -1,4 +1,4 @@
-# Shop-Pc
+# MyMagicalPet
 #### Progetto Linguaggi e Tecnologie per il Web - Anno 2019/20
 Repository del progetto di Linguaggi e Tecnologie per il Web per il corso 2019/20 tenuto dal professor Rosati presso La Sapienza Università di Roma.
 
