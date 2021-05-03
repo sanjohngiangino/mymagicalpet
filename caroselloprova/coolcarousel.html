@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+		<title>MyMagicalPet</title>
+		<script src="http://code.jquery.com/jquery-1.5.min.js" type="text/javascript"></script>
+		<script src="jquery.carouFredSel-5.6.1.js" type="text/javascript"></script>
+		<script src="slider.js" type="text/javascript"></script>
+
+		<script type="text/javascript" lang="javascript" src="js/bootstrap.min.js"></script>
+    	<script type="text/javascript" lang="javascript" src="js/bootstrap.bundle.js"></script>
+    	<script type="text/javascript" lang="javascript" src="js/bootstrap.bundle.min.js"></script>
+    	<script type="text/javascript" lang="javascript" src="login.js"></script>
+
+
+		<link rel="stylesheet" href="slider.css" />
+
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    	<link rel="stylesheet" type="text/css" href="index.css">
+    	
+	</head>
+	
+	<body class="text-center">
+
+		<nav class="navbar sticky-top navbar-expand-lg navbar-dark " style="background-color: #641C34 ;">
+            <a class="navbar-brand" href="index.html">
+                <img src="immagini/logo_small.png" height="55px" alt="150px">
+                </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav mr-auto">
+              </ul>
+              <a href="paginaRegistrazione/registrazione.html" class="btn btn-outline-light btn-lg" role="button"><i class="fas fa-user-circle"></i> Registrati ora</a>               
+            </div>            
+        </nav>
+		<br><br>
+		
+		<div>
+			<img src="immagini/logo_large.png" height="120" alt="">
+		
+		</div>
+		<br>	<h4><strong>Adotta un animale fantastico!!</strong></h4>	<br>
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="carousel">
+                <div>
+                    <img class="img-front" src="immagini/cucciolodidrago.jpg" alt="Card image cap" height="190px">
+					<img class="img-back" src="img/Baby-Dragon-wide-i.jpg" alt="Card image cap" height="190px">
+                    <h3>Cuccioli di drago</h3>
+					<p>Dona una casa a un Cucciolo di Drago. Crescilo e Addestralo per poterlo cavalcare e divenire un Signore dei Draghi. Ci dissociamo dalla dieta del drago e da ogni forma di violenza causata dal cucciolo. </p>
+					<a href="http://caroufredsel.frebsite.nl" target="_blank">Read more &raquo;</a>
+				</div>
+				<div >
+					<img class="img-front" src="immagini/poro.jpg" alt="Card image cap" height="190px">
+					<img class="img-back" src="img/poro2.jpg" alt="Card image cap" height="190px">
+					<h3>Cuccioli di drago</h3>
+					<p>Dona una casa a un Cucciolo di Drago. Crescilo e Addestralo per poterlo cavalcare e divenire un Signore dei Draghi. Ci dissociamo dalla dieta del drago e da ogni forma di violenza causata dal cucciolo. </p>
+					<a href="http://caroufredsel.frebsite.nl" target="_blank">Read more &raquo;</a>
+				</div>
+
+				<div>
+					<img class="img-front" src="immagini/flerken.jpg" alt="Card image cap" height="190px">
+					<img class="img-back" src="img/flerken.jpg" alt="Card image cap" height="190px">
+					<h3>Cuccioli di drago</h3>
+					<p>Dona una casa a un Cucciolo di Drago. Crescilo e Addestralo per poterlo cavalcare e divenire un Signore dei Draghi. Ci dissociamo dalla dieta del drago e da ogni forma di violenza causata dal cucciolo. </p>
+					<a href="http://caroufredsel.frebsite.nl" target="_blank">Read more &raquo;</a>
+				</div>
+				
+			</div>
+			<a id="prev" href="#"><span></span></a>
+			<a id="next" href="#"><span></span></a>
+		</div>
+		
+        <a href="pagina_Catalogo/lista_Catalogo.html" class="btn btn-primary btn-lg" style="background-color: #641C34 " role="button">Clicca qui per adottare un MagicalPet!!</a>
+        <br><br><br>
+
+		<div class="header">
+                  <div class="formbox">
+					  <form action="login.php" method="post">
+						<form id="loginForm">        
+							<div class="form-group">
+					 			 <h5><strong>LOGIN</strong></h5>
+					 			 <label>Inserisci username</label>
+							     <input type="text" class="form-control" id="inputUsername" placeholder="Username" name="username">
+					 			 <small class="form-text text-muted">Non condivideremo mai i tuoi dati.</small>
+							</div>
+				 			<div class="form-group">
+					  			<label for="exampleInputPassword1">Password</label>
+					  			<input type="password" class="form-control" id="inputPassword" placeholder="Password" name="password"> 
+				  			</div>
+				  			<button type="submit" class="btn btn-primary " style ="background-color: #641C34  "> Login </button>
+						</form>
+					  </form>
+			      </div>
+		</div>
+		<!-- Fine Header -->  
+
+  <br><br><br><br>
+  
+	</body>
+</html>
