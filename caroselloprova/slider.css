@@ -5,7 +5,7 @@
 .header
 {
 	background-image(immagini/sfondo.jpg);
-	height: 100vh;
+	height: 75vh;
 	background-position: center;
 	background-size: cover;
 	display: flex;
@@ -16,10 +16,24 @@
 .formbox
 {
 	background: rgba(255, 255, 255, 0.5);
-	padding: 20px;
+	padding: 25px;
 	
 }
-
+#faq section p{
+	display : none;
+	text-align: center;
+}
+#faq section a{
+	text-align: center;
+	color: black;
+	text-decoration: none;
+}
+#faq section a:hover{
+	text-decoration: underline;
+}
+#faq section:target p{
+	display : inline-block;
+}
 #wrapper, #carousel, #carousel > div {
 	width: 980px;
 	height: 350px;
