@@ -1,10 +1,6 @@
-{margin: 0;
- padding: 0;
-}
 
 .header
 {
-	background-image(immagini/sfondo.jpg);
 	height: 75vh;
 	background-position: center;
 	background-size: cover;
@@ -19,21 +15,71 @@
 	padding: 25px;
 	
 }
-#faq section p{
-	display : none;
-	text-align: center;
+
+/*  FAQ  TABLE */
+.accordion
+{
+ max-width: 800px;
+ margin-left: 20%;
 }
-#faq section a{
-	text-align: center;
-	color: black;
-	text-decoration: none;
+.accordion .contentBx
+{
+ position: relative;
+ margin: 10px 20px;
 }
-#faq section a:hover{
-	text-decoration: underline;
+
+.accordion .contentBx .label
+{
+ position: relative;
+ margin: 20px;
+ background: #641C34;
+ color: #fff;
+ cursor: pointer;
+ border-radius: 5px;
 }
-#faq section:target p{
-	display : inline-block;
+
+.accordion .title 
+{
+ position: relative;
+ margin: 20px;
+ background: #fff;
+ color: #641C34;
+ cursor: pointer;
+ border-radius: 15px;
+ border: 10px solid #641C34;
 }
+.accordion .contentBx .label::before
+{ content: '+';
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+}
+
+.accordion .contentBx.active .label::before
+{
+ content: '-';
+}
+.accordion .contentBx .content
+{
+ position: relative;
+ padding: 0px;
+ background: #fff;
+ height: 0;
+ overflow: hidden;
+ transition: 0.5s;
+ overflow-y: auto;
+}
+
+.accordion .contentBx.active .content
+{
+ height: 150px;
+ padding: 10px;
+}
+
+/* CAROSELLO */ 
+
 #wrapper, #carousel, #carousel > div {
 	width: 980px;
 	height: 350px;
@@ -160,3 +206,88 @@
 #next:hover span {
 	right: 26px;
 }
+
+/* Bottoni NavBar */
+nav ul {
+  
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  position: relative;
+  display: block;
+  height: 70px;
+  line-height: 70px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .5s;
+}
+
+nav ul li a:hover {
+  color: #262626;
+
+}
+
+
+
+nav ul a {
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .5s;
+
+}
+
+nav ul li a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transform-origin: right;
+  z-index: -1;
+  transform: scaleX(0);
+  transition: transform .5s;
+}
+
+nav ul li a:hover:before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+/* Bottone Torna Su */
+#topButton {
+  display: none;
+  background-color: #641C34;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+#topButton:hover {
+  background-color: #641C34;
+}
+
+
