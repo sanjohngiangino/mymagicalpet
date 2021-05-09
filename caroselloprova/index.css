@@ -32,8 +32,8 @@
 {
  position: relative;
  margin: 20px;
- background: #641C34;
- color: #fff;
+ background: #fff;
+ color: #641C34;
  cursor: pointer;
  border-radius: 5px;
 }
@@ -43,10 +43,8 @@
  position: relative;
  margin: 20px;
  background: #fff;
- color: #641C34;
  cursor: pointer;
- border-radius: 15px;
- border: 10px solid #641C34;
+ /*border: 3px solid #641C34;*/
 }
 .accordion .contentBx .label::before
 { content: '+';

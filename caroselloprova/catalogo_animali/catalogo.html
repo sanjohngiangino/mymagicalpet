@@ -1,0 +1,428 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title >MyMagicalPet - Catalogo</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="catalogo.css">
+        <script type="text/javascript" lang="javascript" src="bootstrap.min.js"></script>
+        <script type="text/javascript" lang="javascript" src="libreria_catalogo.js"></script>
+
+
+    </head>
+	<body>
+    	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+		
+		<nav class="navbar sticky-top" style="background-color: #641c34 ; " id="home">
+			<a class="navbar-brand" href="index.html">
+                <img src="immagini/logo_small.png" height="55px" alt="150px">
+            </a>
+			
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+			<ul>
+				<li><a href="../index.html#home">Home</a></li>
+				<li><a href="../index.html#login">Login</a></li>
+				<li><a href="../index.html#domande">Faq</a></li>
+				<li><a href="../registrazione.html">Registrati</a></li>
+				<li>  <a href="../../pagina_Carrello_utente/carrello.html" > Carrello</a>         </li>
+			</ul>	
+        </nav>
+
+        
+		<br>
+		<center><img src="immagini/logo_large.png" height="120px" alt="150"  ></center>
+		<br><br>
+		<div class="media">
+            <img class="mr-3" src="immagini/sfondo.jpg"  height="100px >
+            <div class="media-body"><br>
+				<font color="white">
+                	<h1><strong>La nostra selezione</strong></h1>
+                	<h4>Qui troverai il meglio che il mercato ha da offrire</h4>
+				</font>
+                <ul class="list-group list-group-flush">
+                </ul>
+            </div>
+        </div>
+		<br>
+		<br>
+        <ul class="list-group list-group-flush" >
+			
+			
+            <li class="list-group-item">
+			
+<!--  lista di container che contengono i prodotti del sito -->
+
+            <div class="container">
+	            <div class="row">
+	            	<div class="col">
+	            			<h4>Poro</h4><br>
+	            		<img class="immag" src="immagini/poro1.jpg" width="340" height="250">
+	            	</div>
+	            	<div class="col">
+						<br><br>
+	            		<h5>Descrizione:</h5>
+	            		Questo piccolo poro &egrave scivolato dalle montagne del freljord a demacia
+						e i soldati demaciani che inizialente lo accolsero si sono accorti che 
+						richiede troppe attenzioni, donagli una casa al pi&ugrave presto(non lo 
+						sopposrtiamo pi&ugrave nemmeno noi XD) <br><br>
+						<h5>Donazione necessaria:</h5>
+	            		<b>100€</b><br><br>
+	            		<button type="button" class="btn btn-outline-dark" onclick="return scrivi_su_localStorage('Poro', 100);">Ordina</button></li>
+	            	</div>
+            </div>
+            
+            <li class="list-group-item">
+
+            <div class="container">
+            	<div class="row">
+            		<div class="col">
+            			<h4>Felyne </h4><br>
+            			<img class="immag" src="immagini/felyne1.jpg" widht="300" height="200">
+            		</div>
+            		<div class="col">
+						<br><br>
+            			<h5>Descrizione:</h5>
+            			&Egrave stato licenziato dal suo padrone precedente perch&egrave le sue
+						abilità non erano pi&ugrave richieste, ma resta pur sempre un ottimo cuoco!<br><br>
+						<h5>Donazione necessaria:</h5>
+            			<b>500€</b><br><br>
+            			<button type="button" class="btn btn-outline-dark" onclick="return scrivi_su_localStorage('Felyne', 500);">Ordina</button></li>
+        			</div>
+        		</div>
+        	</div>
+
+            <li class="list-group-item">
+
+            <div class="container">
+            	<div class="row">
+            		<div class="col">
+            			<h4>Almiraj</h4><br>
+            			<img class="immag" src="immagini/Almiraj.png" width="200" height="270">
+            		</div>
+            		<div class="col">
+						<br><br>
+            			<h5>Descrizione:</h5>
+            			Un Almiraj somiglia a un grande coniglio o lepre con pelo 
+						giallastro e un corno a spirale lungo circa 30 centimetri, 
+						solitamente di colore nero posto sulla fronte come gli unicorni.
+						Sono animali timidi e stupidi, di conseguenza agiscono spesso in
+						maniera inaspettata ma sono anche facili da addestrare e 
+						rimangono fedeli al proprio padrone.
+						<br><br>
+						<h5>Donazione necessaria:</h5>
+            			<b>50€</b><br><br>
+            			<br><button type="button" class="btn btn-outline-dark" onclick="return scrivi_su_localStorage('Almiraj', 50);">Ordina</button></li>
+            		</div>
+            	</div>
+            </div>
+            
+            <li class="list-group-item">
+
+            <div class="container">
+            	<div class="row">
+            		<div class="col">
+						<h4>Chocobo</h4><br>
+						<img class="immag" src="immagini/chocobo.jpg" width="250" height="200">
+					</div>
+					<div class="col">
+						<br><br>
+						<h5>Descrizione:</h5>
+						Vi siete stufati dei cavalli ma la voglia di utilizzare 
+						un animale come se fosse un motorino non vi è passata?!<br>
+						PERFETTO!<br>
+						Questi grossi pennuti gialli fanno al caso vostro!
+						Intelligenti, simpatici e veloci stringeranno un forte 
+						legame con voi se riuscirete a farli sentire a proprio agio.
+						<br><br>
+						<h5>Donazione necessaria:</h5>
+						<b>600€</b><br><br>
+						<button type="button" class="btn btn-outline-dark" onclick="return scrivi_su_localStorage('Chocobo', 600);">Ordina</button></li>
+					</div>
+				</div>
+			</div>
+
+
+            <li class="list-group-item">
+
+            <div class="container">
+            	<div class="row">
+            		<div class="col">
+            			<h4>Snaso</h4><br>
+            			<img class="immag" src="immagini/snaso.jpg" width="320" height="200">
+            		</div>
+            		<div class="col">
+						<br><br>
+            			<h5>Descrizione</h5>
+            			Gli Snasi hanno un manto di soffice, ricciola e nera pelliccia, 
+						con un muso allungato (simile a quello di papere) e artigli anteriori 
+						piatti che gli consentono di afferrare gli oggetti e di scavare con molta facilità. 
+						Hanno dimensioni che ricordano quelle di un porcellino d'India.
+						La loro cucciolata varia dai sei agli otto piccoli.
+						<br><br>
+						<h5>Donazione necessaria:</h5>
+            			<b>280€</b><br><br>
+            			<button type="button" class="btn btn-outline-dark" onclick="return scrivi_su_localStorage('Snaso', 280);">Ordina</button></li>
+            		</div>
+            	</div>
+            </div>
+
+
+            <li class="list-group-item">
+
+            <div class="container">
+            	<div class="row">
+            		<div class="col">
+            			<h4>Cucciolo di drago autunnale</h4><br>
+            			<img class="immag" src="immagini/drago_autunno.jpg" width="200" height="300">
+            		</div>
+            		<div class="col">
+						<br><br><br>
+            			<h5>Descrizione</h5>
+            			porta l'autunno con se<br><br>
+						<h5>Donazione necessaria:</h5>
+            			<b>3000€</b><br><br>
+            			<button type="button" class="btn btn-outline-dark" onclick="return scrivi_su_localStorage('Cucciolo di drago autunnale', 3000);">Ordina</button></li>
+            		</div>
+            	</div>
+            </div>
+
+			
+            <li class="list-group-item">
+
+
+			<div class="container">
+            	<div class="row">
+            		<div class="col">
+            			<h4 style="color:#641c34"><strong>Pegaso</strong></h4><br>
+            			<img class="immag" src="immagini/pegaso.jpg" width="300" height="200">
+            		</div>
+            		<div class="col">
+						<br><br><br>
+            			<h5>Descrizione</h5>
+            			Un cavallo alato dalla maestosa criniera<br><br>
+						<h5>Donazione necessaria:</h5>
+            			<b>2500€</b><br><br>
+            			<button type="button" class="btn btn-outline-dark" onclick="return scrivi_su_localStorage('Pegaso', 2500);">Ordina</button></li>
+            		</div>
+            	</div>
+            </div>
+
+			
+            <li class="list-group-item">
+
+			<div class="container">
+            	<div class="row">
+            		<div class="col">
+            			<h4 style="color:#641c34">Occamy</h4><br>
+            			<img class="immag" src="immagini/occamy.jpg" width="300" height="300">
+            		</div>
+            		<div class="col">
+						<br><br><br>
+            			<h5>Descrizione</h5>
+            			Un piccolo serpente alato.<br>ATTENZIONE!<br>Tende ad occupare tutto lo spazio circostante<br><br>
+						<h5>Donazione necessaria:</h5>
+            			<b>1000€</b><br><br>
+            			<button type="button" class="btn btn-outline-dark" onclick="return scrivi_su_localStorage('Occamy', 1000);">Ordina</button></li>
+            		</div>
+            	</div>
+            </div>
+
+			
+            <li class="list-group-item">
+
+			<div class="container">
+            	<div class="row">
+            		<div class="col">
+            			<h4>Pseudodrago</h4><br>
+            			<img class="immag" src="immagini/pseudodrago.png" width="300" height="200">
+            		</div>
+            		<div class="col">
+						<br><br><br>
+            			<h5>Descrizione</h5>
+            			Questo piccolo drago possiede un pungiglione velenoso sulla punta della coda e 
+						raggiunge le di mensioni di un cane di mezza grandezza,
+						 aiuta il propietario nello studio e si comporta in maniera simile ai gatti<br><br>
+						<h5>Donazione necessaria:</h5>
+            			<b>3000€</b><br><br>
+            			<button type="button" class="btn btn-outline-dark" onclick="return scrivi_su_localStorage('Pseudodrago', 3000);">Ordina</button></li>
+            		</div>
+            	</div>
+            </div>
+
+
+            <li class="list-group-item">
+
+
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<h4>Cerbero</h4><br>
+							<img class="immag" src="immagini/cerbero.jpg" width="300" height="200">
+						</div>
+						<div class="col">
+							<br><br><br>
+							<h5>Descrizione</h5>
+							Si, pu&ograve diventare pericoloso ma &egrave un bellissimo 
+							cane a 3 teste, come si fa a dirgli di no?!<br><br>
+							<h5>Donazione necessaria:</h5>
+							<b>1000€</b><br><br>
+							<button type="button" class="btn btn-outline-dark" onclick="return scrivi_su_localStorage('Cerbero', 1000);">Ordina</button></li>
+						</div>
+					</div>
+				</div>
+	
+	
+				<li class="list-group-item">
+
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<h4>Flerken</h4><br>
+								<img class="immag" src="immagini/flerken.jpg" width="200" height="260">
+							</div>
+							<div class="col">
+								<br><br><br>
+								<h5>Descrizione</h5>
+								pu&ograve sembrare un grazioso gattino ma nasconde pi&ugrave di quanto non sembri<br><br>
+								<h5>Donazione necessaria:</h5>
+								<b>5000€</b><br><br>
+								<button type="button" class="btn btn-outline-dark" onclick="return scrivi_su_localStorage('Flerken', 5000);">Ordina</button></li>
+							</div>
+						</div>
+					</div>
+
+
+            <li class="list-group-item">
+	
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<h4>Fenice</h4><br>
+							<img class="immag" src="immagini/fenice.jpg" width="320" height="300">
+						</div>
+						<div class="col">
+							<br><br><br>
+							<h5>Descrizione</h5>
+							Questo sacro uccello fatto di fuoco diversamente dagli altri animali non
+							vi dar&agrave problrmi quando tirer&agrave le quoia, perche diversamente da 
+							qualsiasi altro animale la fenice risorger&agrave in un ciclo eterno.<br>
+							(se vi stufate della sua longevit&agrave non esitate a contattarci, 
+							potrete restituirla ma ovviamente non avrete i soldi della donazione indietro)<br><br>
+							<h5>Donazione necessaria:</h5>
+							<b>5000€</b><br><br>
+							<button type="button" class="btn btn-outline-dark" onclick="return scrivi_su_localStorage('Fenice', 5000);">Ordina</button></li>
+						</div>
+					</div>
+				</div>
+	
+	
+				<li class="list-group-item">	
+
+
+
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<h4>Prinny</h4><br>
+								<img class="immag" src="immagini/prinny.jpg" width="300" height="250">
+							</div>
+							<div class="col">
+								<br><br><br>
+								<h5>Descrizione</h5>
+								Sono bambole di pezza a forma di pinguino alla quale i demoni danno vita
+								per utilizzarle come servi, hanno 2 bastoncini al posto
+								delle gambe e se vengono urtati troppo forte o cascano per terra esplodono.<br>
+								I demoni ce ne hanno speditoi qualche centinaia per vederli soffrire nelle
+								case degli umani, sii gentile con loro<br><br>
+								<h5>Donazione necessaria:</h5>
+								<b>5€</b><br><br>
+								<button type="button" class="btn btn-outline-dark" onclick="return scrivi_su_localStorage('Prinny', 5);">Ordina</button></li>
+							</div>
+						</div>
+					</div>
+		
+		
+					<li class="list-group-item">	
+
+						<div class="container">
+							<div class="row">
+								<div class="col">
+									<h4>Chimera</h4><br>
+									<img class="immag" src="immagini/chimera.jpg" width="300" height="300">
+								</div>
+								<div class="col">
+									<br><br><br>
+									<h5>Descrizione</h5>
+									Questo cucciolo di chimera ha una testa di drago, una di leone e 
+									una di capra, pu&ograve crescere e diventare pericolosa, 
+									si raccomanda d'unque di avere un grande giardino, bestiame fresco 
+									e un ampio spazio dove farla volare.<br><br>
+									<h5>Donazione necessaria:</h5>
+									<b>5000€</b><br><br>
+									<button type="button" class="btn btn-outline-dark" onclick="return scrivi_su_localStorage('Chimera', 5000);">Ordina</button></li>
+								</div>
+							</div>
+						</div>
+			
+			
+						<li class="list-group-item">
+
+
+							<div class="container">
+								<div class="row">
+									<div class="col">
+										<h4>Gatto alato</h4><br>
+										<img class="immag" src="immagini/gatto_alato.jpg" width="300" height="350">
+									</div>
+									<div class="col">
+										<br><br><br>
+										<h5>Descrizione</h5>
+										Un simpatico micio con delle splendide ali da gufo, il suo ex 
+										proprietario non lo voleva perch&egrave dice che oltre i mobili sporca anche il soffitto.<br><br>
+										<h5>Donazione necessaria:</h5>
+										<b>300€</b><br><br>
+										<button type="button" class="btn btn-outline-dark" onclick="return scrivi_su_localStorage('Gatto alato', 300);">Ordina</button></li>
+									</div>
+								</div>
+							</div>
+
+        </ul>
+        <br>
+        <br>
+        <br>
+
+
+		<footer class="page-footer font-small white" id ="piede">
+			<div class="footer-copyright text-center py-1"  style="background-color: #641C34 ;color:white">
+			</div>
+			<center>
+			<div class="section clearfix" style="background-color: #ffffff;">
+				<div class="container">
+					<div class="row lp-section-content clearfix">
+						<div class="col-sm-12">
+							<br>
+							<h3>Hai ancora problemi con il tuo MagicalPet? </h3>
+							<p>Contattaci attraverso la nostra mail di supporto.</p>
+							<div class="calltoaction-right-panel">
+								<a href="mailto:supportoclienti@mymagicalpet.com" class="btn btn-primary btn-lg" role="button"style="background-color: #641C34;">Contatta MyMagicalPet!</a>
+							</div>
+							<br>
+						</div>      
+					</div>     
+				</div>
+			</div> </center>
+			<div class="footer-copyright text-left py-3"  style="background-color: #641C34 ;color:white"><strong>&nbsp Si ringraziano i soci </strong> John e Giorgio   .
+			</div>
+	  </footer>
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      
+    </body>
+</html>
