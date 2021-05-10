@@ -15,6 +15,7 @@ var fenice=0;
 var prinny=0;
 var chimera=0;
 var gatto_alato=0;
+var pegaso=0;
 
 // funzione che in base al nome ricevuto in input dalla pagina dei prodotti
 // incrementa la quantità del prodotto
@@ -91,5 +92,5 @@ function scrivi_su_localStorage(nome, prezzoUn) {
     var chiave=nome+"_"+"_"+prezzoUn; 
     var valore=JSON.stringify(prodotto);  
     sessionStorage.setItem(chiave, valore);
-    alert("Hai ordinato:\n"+nome);  //produce un allert visivo contente ciò che hai appena ordinato
+    alert("Grazie per aver adottato:\n"+nome);  //produce un allert visivo contente ciò che hai appena ordinato
 }

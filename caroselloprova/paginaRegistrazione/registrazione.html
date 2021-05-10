@@ -14,7 +14,7 @@
 
     <body class="text-center">
         <nav class="navbar sticky-top" style="background-color: #641c34 ; " id="home">
-			<a class="navbar-brand" href="../../index.html">
+			<a class="navbar-brand" href="../index.html">
                 <img src="../immagini/logo_small.png" height="55px" alt="150px">
             </a>
 			
@@ -34,8 +34,12 @@
         <br>
 
         <!-- ======= Sezione Registrazione  ======= -->
-        <h1><strong>Shop-Pc</strong></h1>
-        <h5>Effettua una nuova registrazione</h5>
+        <img src="../immagini/logo_registrazione.png" height="120px" alt="150px">
+        <br>
+
+        <h5><br>
+            
+            Registrati per adottare un MagicalPet!!<br><br></h5>
         
         <ul class="pagination justify-content-center">
 		<form action="registrazione.php" method="post">
@@ -50,21 +54,25 @@
                         <input type="password" class="form-control" id="inputPassword" placeholder="Password" name="password"> 
                     </div>
                 </div>
-                <div class="form-row">
-                    <div class="form-group col-md-4">
-                        <label>Nome</label>
-                        <input type="text" class="form-control" id="inputName" placeholder="Aldo" name="nome">
-                    </div>
-                    <div class="form-group col-md-4">
-                      <label>Cognome</label>
-                      <input type="text" class="form-control" id="inputCognome" placeholder="Rossi" name="cognome">
-                    </div>
-                    <div class="form-group col-md-4">
+                
+                    <div class="form-group">
                         <label>Username</label>
                         <input type="text" class="form-control" id="inputUsername" placeholder="Username" name="username">
                     </div>
+                   
+                <div class="form-row">
+                    
+                    <div class="form-group col-md-6">
+                        <label>Nome</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="Inserisci qui il tuo Nome" name="nome">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label>Cognome</label>
+                      <input type="text" class="form-control" id="inputCognome" placeholder="Inserisci qui il tuo Cognome" name="cognome">
+                    </div>
+                    
                 </div>
-				<button type="submit" class="btn btn-primary"> Registra </button>
+				<button type="submit" class="btn btn-primary" style="background-color: #641C34 ;color:white"> Registra </button>
 
 		</form>
 		</form>
