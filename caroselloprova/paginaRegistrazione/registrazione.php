@@ -1,4 +1,4 @@
-<!-- la registrazione, per la natura del localhost, funziona solo sul pc dove risiede il server
+<!-- la registrazione, per la natura del localhost, funziona solo sul pc dove risiede il server-->
 
 <?php
 
