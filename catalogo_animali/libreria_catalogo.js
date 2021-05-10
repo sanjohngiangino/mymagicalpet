@@ -16,6 +16,9 @@ var prinny=0;
 var chimera=0;
 var gatto_alato=0;
 var pegaso=0;
+var tartaruga=0;
+var kitsune=0;
+var grifone=0;
 
 // funzione che in base al nome ricevuto in input dalla pagina dei prodotti
 // incrementa la quantità del prodotto
@@ -82,6 +85,19 @@ function incrementa_quant(nome) {
         gatto_alato+=1;
         return gatto_alato;
     }
+     if (nome=="Tartaruga Bonsai") {
+        tartaruga+=1;
+        return tartaruga;
+    }
+    if (nome=="Kitsune") {
+        kitsune+=1;
+        return kitsune;
+    }
+    if (nome=="Grifone") {
+        grifone+=1;
+        return grifone;
+    }
+
 
 }
 
