@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Shop-Pc - Nuova Registrazione</title>
+        <title> MyMagicalPet Registrazione</title>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link href="../css/bootstrap.css" rel="stylesheet"/>
-        <link href="signin.css" rel="stylesheet"/>
+        <link href="registrazione.css" rel="stylesheet"/>
         <script type="text/javascript" lang="javascript" src="../js/bootstrap.min.js"></script>
         <script type="text/javascript" lang="javascript" src="registrazione.js"></script>
     </head>
@@ -13,24 +13,33 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
 
     <body class="text-center">
-        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="../index.html">
+        <nav class="navbar sticky-top" style="background-color: #641c34 ; " id="home">
+			<a class="navbar-brand" href="../index.html">
                 <img src="../immagini/logo_small.png" height="55px" alt="150px">
             </a>
+			
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav mr-auto">
-                </ul> 
-            </div>             
+
+			<ul>
+				<li><a href="../index.html#home">Home</a></li>
+				<li><a href="../index.html#login">Login</a></li>
+				<li><a href="../index.html#domande">Faq</a></li>
+				<li>  <a href="../pagina_Carrello_utente/carrello.html" > Carrello</a>         </li>
+			</ul>	
         </nav>
+
 
         <br>
 
         <!-- ======= Sezione Registrazione  ======= -->
-        <h1><strong>Shop-Pc</strong></h1>
-        <h5>Effettua una nuova registrazione</h5>
+        <img src="../immagini/logo_registrazione.png" height="120px" alt="150px">
+        <br>
+
+        <h5><br>
+            
+            Registrati per adottare un MagicalPet!!<br><br></h5>
         
         <ul class="pagination justify-content-center">
 		<form action="registrazione.php" method="post">
@@ -45,21 +54,25 @@
                         <input type="password" class="form-control" id="inputPassword" placeholder="Password" name="password"> 
                     </div>
                 </div>
-                <div class="form-row">
-                    <div class="form-group col-md-4">
-                        <label>Nome</label>
-                        <input type="text" class="form-control" id="inputName" placeholder="Aldo" name="nome">
-                    </div>
-                    <div class="form-group col-md-4">
-                      <label>Cognome</label>
-                      <input type="text" class="form-control" id="inputCognome" placeholder="Rossi" name="cognome">
-                    </div>
-                    <div class="form-group col-md-4">
+                
+                    <div class="form-group">
                         <label>Username</label>
                         <input type="text" class="form-control" id="inputUsername" placeholder="Username" name="username">
                     </div>
+                   
+                <div class="form-row">
+                    
+                    <div class="form-group col-md-6">
+                        <label>Nome</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="Inserisci qui il tuo Nome" name="nome">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label>Cognome</label>
+                      <input type="text" class="form-control" id="inputCognome" placeholder="Inserisci qui il tuo Cognome" name="cognome">
+                    </div>
+                    
                 </div>
-				<button type="submit" class="btn btn-primary"> Registra </button>
+				<button type="submit" class="btn btn-primary" style="background-color: #641C34 ;color:white"> Registra </button>
 
 		</form>
 		</form>
@@ -69,10 +82,28 @@
        <br><br><br>
 
         <!-- Footer -->
-      <footer class="page-footer font-small blue">
-        <div class="footer-copyright fixed-bottom text-center py-3"  style="background-color: #82FF5C;"><strong>Made with</strong> ❤️ Riccardo e Lorenzo
-          </div>
-      </footer>
+        <footer class="page-footer font-small white" id ="piede">
+			<div class="footer-copyright text-center py-1"  style="background-color: #641C34 ;color:white">
+			</div>
+			<center>
+			<div class="section clearfix" style="background-color: #ffffff;">
+				<div class="container">
+					<div class="row lp-section-content clearfix">
+						<div class="col-sm-12">
+							<br>
+							<h3>Hai ancora problemi con il tuo MagicalPet? </h3>
+							<p>Contattaci attraverso la nostra mail di supporto.</p>
+							<div class="calltoaction-right-panel">
+								<a href="mailto:supportoclienti@mymagicalpet.com" class="btn btn-primary btn-lg" role="button"style="background-color: #641C34;">Contatta MyMagicalPet!</a>
+							</div>
+							<br>
+						</div>      
+					</div>     
+				</div>
+			</div> </center>
+			<div class="footer-copyright text-left py-3"  style="background-color: #641C34 ;color:white"><strong>&nbsp Si ringraziano i soci </strong> John e Giorgio   .
+			</div>
+	  </footer>
       <!-- Fine Footer -->
 
     </body>

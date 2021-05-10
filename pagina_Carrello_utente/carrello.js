@@ -5,7 +5,7 @@
 function stampaTabellaDaStorage() {
     var l=sessionStorage.length;  // oggetto che permette il salvataggio di variabili
     var tot=0;
-    var tab=new String('<table id="cart" class="table table-hover table-condensed"><thead><tr><th style="width:50%">Prodotto</th><th style="width:10%">Prezzo</th><th style="width:8%">Quantità</th><th style="width:22%" class="text-center">Totale</th><th style="width:10%"></th></tr></thead>');
+    var tab=new String('<table id="cart" class="table table-hover table-condensed"><thead><tr><th style="width:30%">Animale da adottare</th><th style="width:30%">Donazione Richiesta</th><th style="width:15%">Quantità</th><th style="width:15%" class="text-center">Donazione Totale</th><th style="width:10%"></th></tr></thead>');
     tab+="<tbody>";
     var i;
     for (i=0; i<l; i++) {
@@ -21,8 +21,8 @@ function stampaTabellaDaStorage() {
         
     }
     tab+='<tfoot><tr class="visible-xs"><td class="text-center"><strong>Totale '+tot+' €</strong></td></tr>';
-    tab+='<tr><td><a href="../pagina_Catalogo/lista_Catalogo.html" class="btn btn-warning"><i class="fa fa-angle-left"></i> Torna al Catalogo</a></td>';
-    tab+='<td><button class="btn btn-success" onclick="return cancellaTutto();">Checkout <i class="fa fa-angle-right"></i></button></td>';
+    tab+='<tr><td><a href="../catalogo_animali/catalogo.html" class="btn" style="background-color: #641c34 ;color :white"><i class="fa fa-angle-left"></i> Torna al Catalogo</a></td>';
+    tab+='<td><button class="btn btn-success" onclick="return cancellaTutto();">DONA ORA!! <i class="fa fa-angle-right"></i></button></td>';
     tab+='<td><button class="btn btn-danger" onclick="return cancellaCarrello();">Svuota carrello</button></td></tr>';
     tab+="</tbody></table>";
     document.getElementById("tabella").innerHTML=tab;
