@@ -1,5 +1,5 @@
 /*
-    Script che controlla il form del pagamento
+    Script che controlla il form della donazione
 */
 
 function checkStringIsEmpty(str) {

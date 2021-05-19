@@ -1,7 +1,7 @@
 <?php
 session_start();
-
 ?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,12 +13,15 @@ session_start();
         
         <script type="text/javascript" lang="javascript" src="../js/bootstrap.min.js"></script>
         <script type="text/javascript" lang="javascript" src="#"></script>
+        <script src="donazione_riuscita.js"></script>
+
 
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
 
-        <meta http-equiv="refresh" content="8; url=../indexloggato.html">
+      <meta http-equiv="refresh" content="8; url=../indexloggato.html">
     </head>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
@@ -34,6 +37,8 @@ session_start();
             </button>
         </nav>
 
+       
+
       <br><br></br>
       <h1>Donazione ordine avvenuto con successo!</h1>
 
@@ -45,6 +50,7 @@ session_start();
  } else {
      echo "Please log in first to see this page.";
  }
+ 
  ?>
 
      

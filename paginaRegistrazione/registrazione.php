@@ -1,5 +1,5 @@
 <html>
-<title>Esempio in PHP</title>
+<title>registrazione</title>
 <head></head>
 <body>
     <?php
