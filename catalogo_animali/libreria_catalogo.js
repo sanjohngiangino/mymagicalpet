@@ -20,8 +20,7 @@ var tartaruga=0;
 var kitsune=0;
 var grifone=0;
 
-// funzione che in base al nome ricevuto in input dalla pagina dei prodotti
-// incrementa la quantità del prodotto
+// funzione che in base al nome ricevuto in input dalla pagina degli animali e incrementa il numero da adottare
 
 function incrementa_quant(nome) {
     if (nome=="Poro") {
@@ -101,12 +100,13 @@ function incrementa_quant(nome) {
 
 }
 
-function scrivi_su_localStorage(nome, prezzoUn) { 
-    //questa funzione scrive sul localStorage i prodotti ordinati
-	// variabili che vengono riprese da carrello 
-    var prodotto={ nome_prodotto: nome, quantita: incrementa_quant(nome), prezzo_unitario: prezzoUn};
-    var chiave=nome+"_"+"_"+prezzoUn; 
-    var valore=JSON.stringify(prodotto);  
+function scrivi_su_localStorage(nome, donazUn) { 
+    //questa funzione scrive sul localStorage i gli animali da adottare ordinati
+	// variabili che vengono riprese dal carrello adozione
+    var animale={ nome_animale: nome, quantita: incrementa_quant(nome), donazione_unitaria: donazUn};
+    var chiave=nome+"_"+"_"+donazUn; 
+    var valore=JSON.stringify(animale);
+      
     sessionStorage.setItem(chiave, valore);
     alert("Grazie per aver adottato:\n"+nome);  //produce un allert visivo contente ciò che hai appena ordinato
 }

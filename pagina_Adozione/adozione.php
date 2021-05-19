@@ -1,75 +1,75 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
-        <title>MyMagicalPet - Donazione</title>
+        <title>MyMagicalPet - Adozione</title>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="drago.css">
         <script type="text/javascript" lang="javascript" src="../js/bootstrap.min.js"></script>
-        <script type="text/javascript" lang="javascript" src="#"></script>
-        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <!--<meta http-equiv="refresh" content="8; url=../index.html">-->
-
+        <script type="text/javascript" lang="javascript" src="adozione.js"></script>
+        <link rel="stylesheet" type="text/css" href="adozione.css">
     </head>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
 
-    <body class="text-center">
-        <nav class="navbar sticky-top" style="background-color: #641C34 ; " id="home">
-			<a class="navbar-brand" href="../index.html">
+    <body class="text-center" onload="return stampaTabellaDaStorage();">
+        <nav class="navbar sticky-top" style="background-color: #641c34 ; " id="home">
+			<a class="navbar-brand" href="../indexloggato.html">
                 <img src="../immagini/logo_small.png" height="55px" alt="150px">
             </a>
 			
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-        </nav>
-      
-      
-      <br><br></br>
-      <h1>Donazione avvenuta con successo!</h1>
-      <br>
-      <br>
-      <br>
-      
-      <div class="main">
 
-        <div class="shadow-wrapper">
-            <div class="shadow"></div>
-        </div>
-        <center>
-        <div class="dragon">
-            <div class="body"></div>
-            <div class="horn-left"></div>
-            <div class="horn-right"></div>
-            <div class="eye left"></div>
-            <div class="eye right"></div>
-            <div class="blush left"></div>
-            <div class="blush right"></div>
-            <div class="mouth"></div>
-            <div class="tail-sting"></div>
-        </div>
-      </center>
-      
-        <div class="fire-wrapper">
-            <div class="fire"></div>
-        </div>
-        <br>
-        <h2 class="animate">Sto tornando alla Home!!</h2>
-      <br>
+			<ul>
+				<li><a href="../indexloggato.html">Home</a></li>
+				<li><a href="../indexloggato.html#logout">Logout</a></li>
+				<li><a href="../indexloggato.html#domande">Faq</a></li>
+			</ul>	
+        </nav>
+
       
       <br>
-    </div>
-        
-      <br><br><br><br><br>     
+      <font color=#641c34> 
+      <h1><?php     
+                                    if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+                                    
+                                    echo $_SESSION['username'];
+                                } else {
+                                    echo "Please log in first to see this page.";
+                                }
+                                ?>! Benvenuto nel Carrello Adozione</h1>
+    </font>
+      <br>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+                    <div class="container" id="tabella">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <div id="vistaStorage"></div>
       
-      <!-- Footer -->
+      <br><br><br><br><br>  
+
+     <!-- Footer -->
+
+
+
+
       <footer class="page-footer font-small white" id ="piede">
         <div class="footer-copyright text-center py-1"  style="background-color: #641C34 ;color:white">
         </div>
+        <center>
         <div class="section clearfix" style="background-color: #ffffff;">
             <div class="container">
                 <div class="row lp-section-content clearfix">
@@ -84,16 +84,15 @@
                     </div>      
                 </div>     
             </div>
-        </div>
-        
+        </div> </center>
         <div class="footer-copyright text-left py-3"  style="background-color: #641C34 ;color:white"><strong>&nbsp Si ringraziano i soci </strong> John e Giorgio   .
         </div>
-  </footer>
-    <!-- Fine Footer -->
+      <!-- Fine Footer -->
 
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      
 
     </body>   
 </html>

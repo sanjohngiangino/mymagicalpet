@@ -10,11 +10,14 @@ session_start();
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="drago.css">
+        
         <script type="text/javascript" lang="javascript" src="../js/bootstrap.min.js"></script>
         <script type="text/javascript" lang="javascript" src="#"></script>
+
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
         <meta http-equiv="refresh" content="8; url=../indexloggato.html">
     </head>
 
@@ -33,7 +36,8 @@ session_start();
 
       <br><br></br>
       <h1>Donazione ordine avvenuto con successo!</h1>
-      <?php     
+
+<?php     
     if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
     
     echo "Grazie per aver adottato con MyMagicalPet, " . $_SESSION['username'] . "!";
