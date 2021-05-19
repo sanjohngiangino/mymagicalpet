@@ -1,6 +1,30 @@
 .table>tbody>tr>td, .table>tfoot>tr>td{
     vertical-align: middle;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.media {
+    background-color:#641c34 ;
+    margin-left: 200px;
+    margin-right: 0px;
+}
+
+.immag{
+    border: 1px solid #641c34;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.impseudodrago{
+  border: 1px solid #641c34;
+  padding: 5px;
+  border-radius: 120px;
+}
+
 @media screen and (max-width: 600px) {
     table#cart tbody td .form-control{
 		width:20%;

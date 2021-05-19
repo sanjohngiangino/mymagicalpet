@@ -33,9 +33,12 @@ session_start();
 			</ul>	
         </nav>
 
-        <br><br><br>
-        <div class="media">
-            <img class="mr-3" src="../img/porocash.jpeg"  height="100px ">
+        <br>
+        <center><img src="logo_large.png" height="120px" alt="150"  ></center>
+
+      <br>
+		<div class="media">
+            <img class="mr-3" src="../img/poro3.jpg"  height="100px >
             <div class="media-body"><br>
 				<font color="white">
                 	<h1><strong><?php     
@@ -45,34 +48,65 @@ session_start();
                                 } else {
                                     echo "Please log in first to see this page.";
                                 }
-                                ?> , Aiutaci con una Donazione!</strong></h1>
-                	<h4>La donazione copre tutte le spese mediche e di spedizione del tuo MagicalPet :D</h4>
+                                ?> , Compila per avere il tuo MagicalPet!</strong></h1>
+                	<h4>Scegli la specie e il nome del tuo futuro animale del cuore.</h4>
 				</font>
                 <ul class="list-group list-group-flush" id ="poro">
                 </ul>
             </div>
         </div>
-        <br> <br>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-                    <div class="container" id="tabella">
+        <br><br>
+      <ul class="pagination justify-content-center">
+      <form action="adozionedb.php" method="post">
+        <form name="reg">
+                <div class="form-row">
+                    <div class="form-group  col-md-4">
+                        <label >Nome Magical Pet</label>
+                        <input type="text" class="form-control" id="inputNamem" placeholder="Nome del tuo magicalpet" name="nomem">
                     </div>
+                    <div class="form-group col-md-4">
+                    <label >Specie Magical Pet</label>
+                    <select name="specie" class="form-control" id="inputSpecie" type="text">
+                                <option value="Poro">Poro</option>
+                                <option value="Formaggio">Formaggio Stagionato</option>
+                                <option value="Pane">Pane Caldo</option>
+                    </select>
+                    </div>
+                    <div class="form-group  col-md-4">
+                        <label >Username Utente</label>
+                        <input type="text" class="form-control" id="inputUsername" placeholder="Username Utente" name="username">
+                    </div>
+
                 </div>
-            </div>
-        </div>
-    
-    <div id="vistaStorage"></div>
-      
-      <br><br><br><br><br>  
+                <br>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                      <label>Pianeta</label>
+                      <input type="text" class="form-control" id="inputPianeta" placeholder="Inserisci qui il tuo Pianeta" name="pianeta">
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label>Citta'</label>
+                      <input type="text" class="form-control" id="inputCitta" placeholder="Inserisci qui il tuo Citta'" name="citta">
+                    </div>
 
-     <!-- Footer -->
+                    <div class="form-group col-md-4">
+                        <label>Indirizzo</label>
+                        <input type="text" class="form-control" id="inputIndirizzo" placeholder="Inserisci qui il tuo Indirizzo" name="indirizzo">
+                    </div>
+                    
+                </div>
+
+                <br>
+				<button type="submit" class="btn btn-primary" style="background-color: #641C34 ;color:white"> Invia Form di adozione </button>
+		</form>
+		</form>  
+        </ul>
+    <!-- Footer -->
 
 
 
 
-      <footer class="page-footer font-small white" id ="piede">
+    <footer class="page-footer font-small white" id ="piede">
         <div class="footer-copyright text-center py-1"  style="background-color: #641C34 ;color:white">
         </div>
         <center>

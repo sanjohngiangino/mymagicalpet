@@ -21,7 +21,7 @@ session_start();
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         
 
-      <meta http-equiv="refresh" content="8; url=../indexloggato.html">
+      <meta http-equiv="refresh" content="8; url=../pagina_Adozione/adozioneform.php">
     </head>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
@@ -40,12 +40,12 @@ session_start();
        
 
       <br><br></br>
-      <h1>Donazione ordine avvenuto con successo!</h1>
+      <h1>Donazione avvenuta con successo!</h1>
 
 <?php     
     if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
     
-    echo "Grazie per aver adottato con MyMagicalPet, " . $_SESSION['username'] . "!";
+    echo "Grazie per la donazione " . $_SESSION['username'] . " , ora un ultimo passo per avere il tuo MagicalPet!";
      // header('location:paga_terminato.html');
  } else {
      echo "Please log in first to see this page.";
@@ -79,7 +79,7 @@ session_start();
             <div class="fire"></div>
         </div>
         <br>
-        <h2 class="animate">Sto tornando alla Home!!</h2>
+        <h2 class="animate">CARICO!!!</h2>
       <br>
       
       <br>
