@@ -81,22 +81,23 @@ session_start();
                 }else {
                     $uname= "Please log in first to see this page.";
                 }
-                $sql="select * from adozioni where username='$uname'";
+                $sql="select nomem,specie from adozioni where username='$uname'";
                 $result = pg_query($sql)or die('Query failed:'.pg_last_error());
                 $num = pg_num_rows($result);
                 
                 $adottati = [];
                 for ($num-1;$num > 0;--$num){
-                    array_push($adottati,pg_fetch_array($result));
+                    array_push($adottati,pg_fetch_row($result));
                 }
-                echo $adottati[0][1];
             ?>
             <?php if (count($adottati) > 0): ?>
             <table>
             <thead>
-                <tr>
-                <th><?php echo implode('</th><th>', array_keys(current($adottati))); ?></th>
-                </tr>
+            <tr>
+            <h5><br>Animali adottati :</h5>
+
+                <th>Nome</th><th>Specie</th>
+                </tr>  
             </thead>
             <tbody>
             <?php foreach ($adottati as $row): array_map('htmlentities', $row); ?>
@@ -104,36 +105,19 @@ session_start();
                 <td><?php echo implode('</td><td>', $row); ?></td>
                 </tr>
             <?php endforeach; ?>
+
             </tbody>
             </table>
             <?php endif; ?>
-
-
-            
-
-
-
-
-
-
-
-            <div class="px-4 py-3">
-                <h5 class="mb-0">About</h5>
-                <div class="p-4 rounded shadow-sm bg-light">
-                    <p class="font-italic mb-0">Web Developer</p>
-                    <p class="font-italic mb-0">Lives in New York</p>
-                    <p class="font-italic mb-0">Photographer</p>
-                </div>
-            </div>
             <div class="py-4 px-4">
                 <div class="d-flex align-items-center justify-content-between mb-3">
                     <h5 class="mb-0">Recent photos</h5><a href="#" class="btn btn-link text-muted">Show all</a>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6 mb-2 pr-lg-1"><img src="https://images.unsplash.com/photo-1469594292607-7bd90f8d3ba4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="" class="img-fluid rounded shadow-sm"></div>
-                    <div class="col-lg-6 mb-2 pl-lg-1"><img src="https://images.unsplash.com/photo-1493571716545-b559a19edd14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="" class="img-fluid rounded shadow-sm"></div>
-                    <div class="col-lg-6 pr-lg-1 mb-2"><img src="https://images.unsplash.com/photo-1453791052107-5c843da62d97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="" class="img-fluid rounded shadow-sm"></div>
-                    <div class="col-lg-6 pl-lg-1"><img src="https://images.unsplash.com/photo-1475724017904-b712052c192a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="" class="img-fluid rounded shadow-sm"></div>
+                    <div class="col-lg-6 mb-2 pr-lg-1"><img src="../catalogo_animali/immagini/sfondo.jpg" alt="" class="img-fluid rounded shadow-sm"></div>
+                    <div class="col-lg-6 mb-2 pl-lg-1"><img src="../catalogo_animali/immagini/fenice.jpg" alt="" class="img-fluid rounded shadow-sm"></div>
+                    <div class="col-lg-6 pr-lg-1 mb-2"><img src="../catalogo_animali/immagini/pegaso.jpg" alt="" class="img-fluid rounded shadow-sm"></div>
+                    <div class="col-lg-6 pl-lg-1"><img src="../catalogo_animali/immagini/occamy.jpg" alt="" class="img-fluid rounded shadow-sm"></div>
                 </div>
             </div>
         </div>
