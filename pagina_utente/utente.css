@@ -18,7 +18,7 @@ body {
     }
     
     @media screen and (min-width:800px){
-    .responsive {width: 80%;}
+    .responsive {width: 50%;}
     
     .responsive thead th {
     height:50px;
@@ -31,7 +31,6 @@ body {
     .responsive tbody td {
     height:40px;
     line-height:40px;
-    border:1px solid #641C34;
     }
     }
     

@@ -67,7 +67,7 @@ session_start();
                     <div class="form-group col-md-4">
                     <label >Specie Magical Pet</label>
                     <select name="specie" class="form-control" id="inputSpecie" type="text">
-                    <option value="Poro">Poro</option>
+                    <option value="poro">Poro</option>
                                 <option value="felyne">Felyne</option>
                                 <option value="almiraj">Almiraj</option> 
                                 <option value="chocobo">Chocobo</option> 
