@@ -92,14 +92,16 @@ session_start();
             ?>
             <?php if (count($adottati) > 0): ?>
             <table>
-            <thead>
-            <tr>
-            <h5><br>Animali adottati :</h5>
+            <table class="responsive">
+                <thead>
+                    <tr>
+                        <h5><br>Animali adottati :</h5>
+                        <br>
+                        <th>Nome</th><th>Specie</th>
+                    </tr>  
+                </thead>
 
-                <th>Nome</th><th>Specie</th>
-                </tr>  
-            </thead>
-            <tbody>
+                <tbody>
             <?php foreach ($adottati as $row): array_map('htmlentities', $row); ?>
                 <tr>
                 <td><?php echo implode('</td><td>', $row); ?></td>

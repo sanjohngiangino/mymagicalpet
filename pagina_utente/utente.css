@@ -12,3 +12,34 @@ body {
    
     min-height: 100vh
 }
+.responsive {
+    border-collapse:collapse;
+    border-spacing:0;
+    }
+    
+    @media screen and (min-width:800px){
+    .responsive {width: 80%;}
+    
+    .responsive thead th {
+    height:50px;
+    line-height:50px;
+    border:1px solid #641C34;
+    background: #641C34;
+    color:#fff;
+    }
+    
+    .responsive tbody td {
+    height:40px;
+    line-height:40px;
+    border:1px solid #641C34;
+    }
+    }
+    
+    @media screen and (max-width:799px) {
+    .responsive, thead, tbody, th, tr, td {display: block;}
+    
+    .responsive {width:90%;}
+    }
+    .responsive tr:nth-of-type(odd) { 
+        background: #f0d8df; 
+        }
