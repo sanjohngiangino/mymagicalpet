@@ -67,9 +67,24 @@ session_start();
                     <div class="form-group col-md-4">
                     <label >Specie Magical Pet</label>
                     <select name="specie" class="form-control" id="inputSpecie" type="text">
-                                <option value="Poro">Poro</option>
-                                <option value="Formaggio">Formaggio Stagionato</option>
-                                <option value="Pane">Pane Caldo</option>
+                    <option value="Poro">Poro</option>
+                                <option value="felyne">Felyne</option>
+                                <option value="almiraj">Almiraj</option> 
+                                <option value="chocobo">Chocobo</option> 
+                                <option value="snaso">Snaso</option> 
+                                <option value="drago">Cucciolo di drago</option> 
+                                <option value="occamy">Occamy</option> 
+                                <option value="pseudodrago">Pseudodrago</option> 
+                                <option value="cerbero">Cerbero</option> 
+                                <option value="flerken">Flerken</option> 
+                                <option value="fenice">Fenice</option> 
+                                <option value="prinny">Prinny</option> 
+                                <option value="chimera">Chimera</option> 
+                                <option value="gatto_alato">Gatto alato</option> 
+                                <option value="pegaso">Pegaso</option> 
+                                <option value="tartaruga">Tartaruga bonsai</option> 
+                                <option value="kitsune">Kitsune</option> 
+                                <option value="grifone">Grifone</option>
                     </select>
                     </div>
                     <div class="form-group  col-md-4">

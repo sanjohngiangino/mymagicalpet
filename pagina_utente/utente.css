@@ -1,0 +1,14 @@
+.profile-head {
+    transform: translateY(5rem)
+}
+
+.cover {
+    background-color: #641C34;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+body {
+   
+    min-height: 100vh
+}
