@@ -37,7 +37,6 @@ session_start();
 				<li><a href="../indexloggato.php#home">Home</a></li>
 				<li><a href="../indexloggato.php#logout">Logout</a></li>
 				<li><a href="../indexloggato.php#domande">Faq</a></li>
-				<li>  <a href="../pagina_Adozione/adozione.php" > Adozione</a>         </li>
 			</ul>	
         </nav>
  
