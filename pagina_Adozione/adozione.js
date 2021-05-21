@@ -42,6 +42,7 @@ function cancellaCarrello() {   //funzione per svuotare il carrello animali con 
 }
 
 function vaiDonazione(){   //vai alla donazione
+    sessionStorage.clear();
     location.href="../pagina_Donazione/donazione.html";
     return true;
 }
