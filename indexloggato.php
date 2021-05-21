@@ -1,24 +1,28 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
+
 		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+		<link rel="icon" href="logo.ico">
 		<title>MyMagicalPet</title>
+
 		<script src="http://code.jquery.com/jquery-1.5.min.js" type="text/javascript"></script>
 		<script src="jquery.carouFredSel-5.6.1.js" type="text/javascript"></script>
 		<script src="slider.js" type="text/javascript"></script>
+		<script src="js/topbutton.js"></script>
 
 		<script type="text/javascript" lang="javascript" src="js/bootstrap.min.js"></script>
     	<script type="text/javascript" lang="javascript" src="js/bootstrap.bundle.js"></script>
     	<script type="text/javascript" lang="javascript" src="js/bootstrap.bundle.min.js"></script>
-    	<script type="text/javascript" lang="javascript" src="login.js"></script>
-
-		
-		<script src="js/topbutton.js"></script>
-		
+    	<script type="text/javascript" lang="javascript" src="logout.js"></script>
 
 		<link rel="stylesheet" type="text/css" href="index.css" />
-
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+
 	</head>
 	
 	<body class="text-center">
@@ -31,7 +35,7 @@
 		<!-- Barra Navigatrice -->
 
 		<nav class="navbar sticky-top" style="background-color: #641C34 ; " id="home">
-			<a class="navbar-brand" href="index.html">
+			<a class="navbar-brand" href="indexloggato.php">
                 <img src="immagini/logo_small.png" height="55px" alt="150px">
             </a>
 			
@@ -41,10 +45,21 @@
 
 			<ul>
 				<li><a href="#home">Home</a></li>
-				<li><a href="#login">Login</a></li>
+				<li><a href="#logout">Logout</a></li>
 				<li><a href="#domande">Faq</a></li>
 				<li><a href="#piede">Contattaci</a></li>
-				<li><a href="paginaRegistrazione/registrazione.html">Registrati</a></li>
+				<li><a href="pagina_utente/utente.php"><?php     
+							if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+							
+							echo  $_SESSION['username'];
+							// header('location:paga_terminato.html');
+						} else {
+							echo "Please log in first to see this page.";
+						}
+						
+						?>
+					</a> </li>
+
 			  </ul>	
         </nav>
 
@@ -66,14 +81,14 @@
 					<img class="img-back" src="img/cucciolodidrago.jpg" alt="" >
                     <h3>Baby Dragons</h3>
 					<p>Dona una casa a un Baby Dragon. Crescilo e Addestralo per poterlo cavalcare e diventare un Signore dei Draghi. (Ci dissociamo  da ogni forma di violenza causata dal cucciolo.) </p>
-					<a href="catalogo_animali/catalogo.html#babydragon" target="_blank">Adottami ora &raquo;</a>
+					<a href="catalogo_animali/catalogo_loggato.html#babydragon" target="_blank">Adottami ora &raquo;</a>
 				</div>
 				<div >
 					<img class="img-front" src="immagini/poro.jpg" alt="">
 					<img class="img-back" src="img/poro2.jpg" alt="">
 					<h3>Poro, Poro, PORO!!!</h3>
 					<p>Originari delle terre gelate Freljord, I Poro sono piccoli esserini sferici ricoperti di pelo. Purtroppo il riscaldamento globale, li ha portati a soffrire la fame. Sbrigati ad addottarne  uno e salviamo la loro specie!! </p>
-					<a href="catalogo_animali/catalogo.html#poro" target="_blank">Adottami ora &raquo;</a>
+					<a href="catalogo_animali/catalogo_loggato.html#poro" target="_blank">Adottami ora &raquo;</a>
 				</div>
 
 				<div>
@@ -81,7 +96,7 @@
 					<img class="img-back" src="img/flerken.jpg" alt="">
 					<h3>Flerken</h3>
 					<p>Stufi di un semplice gatto? Adotta un Flerken, creature dotate di incredibili poteri: a differenza dei felini depositano uova, e sono dotati di zanne molto aguzze e tentacoli che permettono loro di fare a pezzi in pochi secondi qualsiasi preda. </p>
-					<a href="catalogo_animali/catalogo.html#flerken" target="_blank">Adottami ora &raquo;</a>
+					<a href="catalogo_animali/catalogo_loggato.html#flerken" target="_blank">Adottami ora &raquo;</a>
 				</div>
 
 				<div>
@@ -89,57 +104,53 @@
 					<img class="img-back" src="img/turtlebonsai.jpg" alt="">
 					<h3>Bonsai Turtle</h3>
 					<p>Discendente dalle antiche Tartarughe Isola , le Tartarughe Bonsai sono simili alle tartarughe terrestri il cui guscio è protetto da un Bonsai Giapponese. </p>
-					<a href="catalogo_animali/catalogo.html#bonsai" target="_blank">Adottami ora &raquo;</a>
+					<a href="catalogo_animali/catalogo_loggato.html#bonsai" target="_blank">Adottami ora &raquo;</a>
 				</div>
 				<div>
 					<img class="img-front" src="img/kitsune.jpg" alt=""> 
 					<img class="img-back" src="img/kitsune2.jpg" alt="">
 					<h3>Kitsune</h3>
 					<p>e' un essere dotato di grande intelligenza, in grado di vivere a lungo e di sviluppare con l'eta' poteri soprannaturali: il principale tra questi ultimi e' l'abilita' di cambiare aspetto e assumere sembianze umane. </p>
-					<a href="catalogo_animali/catalogo.html#kitsune" target="_blank">Adottami ora &raquo;</a>
+					<a href="catalogo_animali/catalogo_loggato.html#kitsune" target="_blank">Adottami ora &raquo;</a>
 				</div>
 				<div>
 					<img class="img-front" src="img/grifon.png" alt="">
 					<img class="img-back" src="img/grifon2.jpg" alt="">
 					<h3>Grifone</h3>
 					<p>e' un essere leggendario con il corpo di leone e la testa d'aquila, con le zampe anteriori d'aquila, dotate di artigli, questo mitico animale indica la conciliazione della forza con la saggezza, forza e vigilanza.</p>
-					<a href="catalogo_animali/catalogo.html#grifone" target="_blank">Adottami ora &raquo;</a>
+					<a href="catalogo_animali/catalogo_loggato.html#grifone" target="_blank">Adottami ora &raquo;</a>
 				</div>
 				
 			</div>
 			<a id="prev" href="#"><span></span></a>
 			<a id="next" href="#"><span></span></a>
 		</div>
-		<br id=login>
+		<br id=logout>
 		<!-- Fine Carosello -->
 
 
 		<!--Pulsante Catalogo-->
-        <a href="catalogo_animali/catalogo.html" class="btn btn-primary btn-lg" style="background-color: #641C34 " role="button" >Clicca qui per adottare un MagicalPet!!</a>
-        
-		<br><br><br>
-		
+        <a href="catalogo_animali/catalogo_loggato.html" class="btn btn-primary btn-lg" style="background-color: #641C34 " role="button" >Clicca qui per adottare un MagicalPet!!</a>
 
-		<!-- Login-->
-		<div class="header" >
-                  <div class="formbox">
-					  <form action="login.php" method="post">
-						<form id="loginForm">        
-							<div class="form-group">
-					 			 <h5><strong>LOGIN</strong></h5>
-					 			 <label>Inserisci username</label>
-							     <input type="text" class="form-control" id="inputUsername" placeholder="Username" name="username">
-							</div>
-				 			<div class="form-group">
-					  			<label for="exampleInputPassword1">Password</label>
-					  			<input type="password" class="form-control" id="inputPassword" placeholder="Password" name="password"> 
-				  			</div>
-				  			<button type="submit" class="btn btn-primary " style ="background-color: #641C34  "> Login </button>
-						</form>
-					  </form>
-			      </div>
+		<br><br><br>
+
+	<!-- Logout-->
+	<div class="header" >
+		<div class="formbox">
+			<form action="logout.php" method="post">
+			  <form id="loginForm">
+				<br>        
+				  <div class="form-group">
+						<h2><strong>LOGOUT</strong></h2>
+					</div>
+					<br>
+					<h5> Clicca qui per effettuare il Logout! </h5>
+					<br>
+					<button type="submit" class="btn btn-primary " style ="background-color: #641C34  "> Logout </button>
+			  </form>
+			</form>
 		</div>
-		<!-- Fine Login-->
+	</div>
 
 		<!-- Sezione FAQ-->
 		<br id=domande><br>	 <br><br>

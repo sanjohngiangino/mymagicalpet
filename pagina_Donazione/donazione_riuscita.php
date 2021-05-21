@@ -6,6 +6,7 @@ session_start();
 <html>
     <head>
         <title>MyMagicalPet - Donazione</title>
+        <link rel="icon" href="../logo.ico">
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
@@ -28,7 +29,7 @@ session_start();
 
     <body class="text-center">
         <nav class="navbar sticky-top" style="background-color: #641C34 ; " id="home">
-			<a class="navbar-brand" href="../indexloggato.html">
+			<a class="navbar-brand" href="../indexloggato.php">
                 <img src="../immagini/logo_small.png" height="55px" alt="150px">
             </a>
 			

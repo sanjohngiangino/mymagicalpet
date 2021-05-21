@@ -3,8 +3,18 @@ session_start();
 ?>
 <!DOCTYPE html>
 <html>
-<head>
-        <title>MyMagicalPet - Pagina Utente</title>
+<head>  
+        <link rel="icon" href="../logo.ico">
+        <title>MyMagicalPet - Pagina <?php     
+							if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+							
+							echo  $_SESSION['username'];
+							// header('location:paga_terminato.html');
+						} else {
+							echo "Please log in first to see this page.";
+						}
+						
+						?></title>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="stylesheet" type="text/css" href="utente.css">
@@ -15,13 +25,20 @@ session_start();
 </head>
 <body>
     <nav class="navbar sticky-top" style="background-color: #641C34 ; " id="home">
-			<a class="navbar-brand" href="../indexloggato.html">
+			<a class="navbar-brand" href="../indexloggato.php">
                 <img src="../immagini/logo_small.png" height="55px" alt="150px">
             </a>
 			
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
+
+            <ul>
+				<li><a href="../indexloggato.php#home">Home</a></li>
+				<li><a href="../indexloggato.php#logout">Logout</a></li>
+				<li><a href="../indexloggato.php#domande">Faq</a></li>
+				<li>  <a href="../pagina_Adozione/adozione.php" > Adozione</a>         </li>
+			</ul>	
         </nav>
  
 <div class="row py-5 ">
@@ -33,13 +50,13 @@ session_start();
                 <div class="media align-items-end profile-head">
                     <div class="profile mr-3"><img src="../img/sfondo.jpg" alt="..." width="130" class="rounded mb-2 img-thumbnail"></div>
                     <div class="media-body mb-5 text-white">
-                        <h2 class="mt-0 mb-0"><?php     
+                        <h1 class="mt-0 mb-0"><?php     
                                 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                 echo $_SESSION['username'];
                                 } else {
                                     echo "Please log in first to see this page.";
                                 }
-                                ?></h2>
+                                ?></h1>
                         <p class="small mb-4"> <i class="fas fa-map-marker-alt mr-2"></i>Amico degli animali</p>
                     </div>
                 </div>
@@ -131,7 +148,7 @@ session_start();
                                                 <img class="card-img-top" src="img/Almiraj.png" alt="Card image cap" height="200px">
                                                 <div class="card-body">
                                                     <h5 class="card-title"><strong><?php echo $row[0]?></strong></h5>
-                                                    <p class="card-text">Preparati a nuove avventure e a lunghe conversazioni con il tuo nuovo amico felino!</p>
+                                                    <p class="card-text">Questo tuo nuovo coniglietto cicciottello cornuto è sempre affamato di carote e di affetto.</p>
                                                     <div class="dropdown">  <!-- aiuta col layout -->
                                                     </div>
                                                 </div>
@@ -144,7 +161,7 @@ session_start();
                                                 <img class="card-img-top" src="img/chocobo.jpeg" alt="Card image cap" height="200px">
                                                 <div class="card-body">
                                                     <h5 class="card-title"><strong><?php echo $row[0]?></strong></h5>
-                                                    <p class="card-text">Preparati a nuove avventure e a lunghe conversazioni con il tuo nuovo amico felino!</p>
+                                                    <p class="card-text">Il suo becco è duro come un sasso ma le sue piume rendono il suo corpo mobido e soffice, ideale per un pisolino in campagna.</p>
                                                     <div class="dropdown">  <!-- aiuta col layout -->
                                                     </div>
                                                 </div>
@@ -157,7 +174,7 @@ session_start();
                                                 <img class="card-img-top" src="img/snaso.jpg" alt="Card image cap" height="200px">
                                                 <div class="card-body">
                                                     <h5 class="card-title"><strong><?php echo $row[0]?></strong></h5>
-                                                    <p class="card-text">Preparati a nuove avventure e a lunghe conversazioni con il tuo nuovo amico felino!</p>
+                                                    <p class="card-text">Attento al portafogli, e non solo al tuo, questa talpa dal musetto simpatico potrebbe farti finire nei guai.</p>
                                                     <div class="dropdown">  <!-- aiuta col layout -->
                                                     </div>
                                                 </div>
@@ -170,7 +187,7 @@ session_start();
                                                 <img class="card-img-top" src="img/cucciolodidrago.jpg" alt="Card image cap" height="200px">
                                                 <div class="card-body">
                                                     <h5 class="card-title"><strong><?php echo $row[0]?></strong></h5>
-                                                    <p class="card-text">Preparati a nuove avventure e a lunghe conversazioni con il tuo nuovo amico felino!</p>
+                                                    <p class="card-text">Sembra un'angioletto quando dorme ma quando è sveglio porta caos e distruzione in giro per la stanza, meglio tenerlo all'aperto.</p>
                                                     <div class="dropdown">  <!-- aiuta col layout -->
                                                     </div>
                                                 </div>
@@ -183,7 +200,7 @@ session_start();
                                                 <img class="card-img-top" src="img/occamy.jpg" alt="Card image cap" height="200px">
                                                 <div class="card-body">
                                                     <h5 class="card-title"><strong><?php echo $row[0]?></strong></h5>
-                                                    <p class="card-text">Preparati a nuove avventure e a lunghe conversazioni con il tuo nuovo amico felino!</p>
+                                                    <p class="card-text">Essendo giustospazioso può entrare in una tua tasca ma stai attento al luogo in cui lo lasci, tende ad espandersi e occupare tutto lo spazio disponibile.</p>
                                                     <div class="dropdown">  <!-- aiuta col layout -->
                                                     </div>
                                                 </div>
@@ -196,7 +213,7 @@ session_start();
                                                 <img class="card-img-top" src="img/pseudodrago.webp" alt="Card image cap" height="200px">
                                                 <div class="card-body">
                                                     <h5 class="card-title"><strong><?php echo $row[0]?></strong></h5>
-                                                    <p class="card-text">Preparati a nuove avventure e a lunghe conversazioni con il tuo nuovo amico felino!</p>
+                                                    <p class="card-text"> Incredibilmente curioso e utile quando si tratta di magia, ma non avicinarti alla sua ciotola di cibo, il suo pungiglione è molto velenoso.</p>
                                                     <div class="dropdown">  <!-- aiuta col layout -->
                                                     </div>
                                                 </div>
@@ -209,7 +226,7 @@ session_start();
                                                 <img class="card-img-top" src="img/cerbero.jpg" alt="Card image cap" height="200px">
                                                 <div class="card-body">
                                                     <h5 class="card-title"><strong><?php echo $row[0]?></strong></h5>
-                                                    <p class="card-text">Preparati a nuove avventure e a lunghe conversazioni con il tuo nuovo amico felino!</p>
+                                                    <p class="card-text">E adesso che fai?! gli dai un nome solo o chiami ogni testa in modo diverso?!</p>
                                                     <div class="dropdown">  <!-- aiuta col layout -->
                                                     </div>
                                                 </div>
@@ -222,7 +239,7 @@ session_start();
                                                 <img class="card-img-top" src="img/flerken.jpg" alt="Card image cap" height="200px">
                                                 <div class="card-body">
                                                     <h5 class="card-title"><strong><?php echo $row[0]?></strong></h5>
-                                                    <p class="card-text">Preparati a nuove avventure e a lunghe conversazioni con il tuo nuovo amico felino!</p>
+                                                    <p class="card-text">Si struscia e fa le fusa, tal volta se lo accarezzi mentre guardi da un'alltra parte potresti sentire qualcosa di viscido,ma non preoccuparti sono i tentacoli.</p>
                                                     <div class="dropdown">  <!-- aiuta col layout -->
                                                     </div>
                                                 </div>
@@ -235,7 +252,7 @@ session_start();
                                                 <img class="card-img-top" src="img/fenice.jpg" alt="Card image cap" height="200px">
                                                 <div class="card-body">
                                                     <h5 class="card-title"><strong><?php echo $row[0]?></strong></h5>
-                                                    <p class="card-text">Preparati a nuove avventure e a lunghe conversazioni con il tuo nuovo amico felino!</p>
+                                                    <p class="card-text">Se muore non preoccuparti, non serve scaricarla nel gabinetto come hai fatto col pesce rosso, aspetta qualche giorno e dopo essere andata in autocombustione rinascerà come nuova.</p>
                                                     <div class="dropdown">  <!-- aiuta col layout -->
                                                     </div>
                                                 </div>
@@ -248,7 +265,7 @@ session_start();
                                                 <img class="card-img-top" src="img/prinny.jpg" alt="Card image cap" height="200px">
                                                 <div class="card-body">
                                                     <h5 class="card-title"><strong><?php echo $row[0]?></strong></h5>
-                                                    <p class="card-text">Preparati a nuove avventure e a lunghe conversazioni con il tuo nuovo amico felino!</p>
+                                                    <p class="card-text">Sembra essere stranamente terrorizzato da ogni tuo movimento...</p>
                                                     <div class="dropdown">  <!-- aiuta col layout -->
                                                     </div>
                                                 </div>
@@ -261,7 +278,7 @@ session_start();
                                                 <img class="card-img-top" src="img/chimera.jpg" alt="Card image cap" height="200px">
                                                 <div class="card-body">
                                                     <h5 class="card-title"><strong><?php echo $row[0]?></strong></h5>
-                                                    <p class="card-text">Preparati a nuove avventure e a lunghe conversazioni con il tuo nuovo amico felino!</p>
+                                                    <p class="card-text">Forse non è stata una buona idea fondere insieme animali cosi' diversi tra di loro, non la smettono di bisticciare.</p>
                                                     <div class="dropdown">  <!-- aiuta col layout -->
                                                     </div>
                                                 </div>
@@ -274,7 +291,7 @@ session_start();
                                                 <img class="card-img-top" src="img/gatto_alato.jpg" alt="Card image cap" height="200px">
                                                 <div class="card-body">
                                                     <h5 class="card-title"><strong><?php echo $row[0]?></strong></h5>
-                                                    <p class="card-text">Preparati a nuove avventure e a lunghe conversazioni con il tuo nuovo amico felino!</p>
+                                                    <p class="card-text">Dall'alto è più facile vedere i topi, e poi op l'ho sempre detto che i gatti assomigliano molto ai gufi.</p>
                                                     <div class="dropdown">  <!-- aiuta col layout -->
                                                     </div>
                                                 </div>
@@ -287,7 +304,7 @@ session_start();
                                                 <img class="card-img-top" src="img/pegaso.jpg" alt="Card image cap" height="200px">
                                                 <div class="card-body">
                                                     <h5 class="card-title"><strong><?php echo $row[0]?></strong></h5>
-                                                    <p class="card-text">Preparati a nuove avventure e a lunghe conversazioni con il tuo nuovo amico felino!</p>
+                                                    <p class="card-text">Sembra di essere in una favola, no... mangia troppe carote per essere una favola.</p>
                                                     <div class="dropdown">  <!-- aiuta col layout -->
                                                     </div>
                                                 </div>
@@ -300,7 +317,7 @@ session_start();
                                                 <img class="card-img-top" src="img/kitsune2.jpg" alt="Card image cap" height="200px">
                                                 <div class="card-body">
                                                     <h5 class="card-title"><strong><?php echo $row[0]?></strong></h5>
-                                                    <p class="card-text">Preparati a nuove avventure e a lunghe conversazioni con il tuo nuovo amico felino!</p>
+                                                    <p class="card-text">Occhio! Non sono i ladri! Potrebbe essere la tua kitsune nell'altra forma.</p>
                                                     <div class="dropdown">  <!-- aiuta col layout -->
                                                     </div>
                                                 </div>
@@ -313,7 +330,7 @@ session_start();
                                                 <img class="card-img-top" src="img/grifon.png" alt="Card image cap" height="200px">
                                                 <div class="card-body">
                                                     <h5 class="card-title"><strong><?php echo $row[0]?></strong></h5>
-                                                    <p class="card-text">Preparati a nuove avventure e a lunghe conversazioni con il tuo nuovo amico felino!</p>
+                                                    <p class="card-text">Ti scruta con sguardo attento, è piuttosto pericoloso, non fare movimenti bruschi.</p>
                                                     <div class="dropdown">  <!-- aiuta col layout -->
                                                     </div>
                                                 </div>
@@ -326,7 +343,7 @@ session_start();
                                                 <img class="card-img-top" src="img/tartaruga_3.jpg" alt="Card image cap" height="200px">
                                                 <div class="card-body">
                                                     <h5 class="card-title"><strong><?php echo $row[0]?></strong></h5>
-                                                    <p class="card-text">Preparati a nuove avventure e a lunghe conversazioni con il tuo nuovo amico felino!</p>
+                                                    <p class="card-text">Non è molto divertente, per la maggior parte del tempo sta ferma.</p>
                                                     <div class="dropdown">  <!-- aiuta col layout -->
                                                     </div>
                                                 </div>
@@ -347,17 +364,38 @@ session_start();
 
             <div class="py-4 px-4">
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                    <h5 class="mb-0">Recent photos</h5><a href="#" class="btn btn-link text-muted">Show all</a>
+                    <h3 class="mb-0" style ="color:#641C34">Altri animali che puoi adottare!</h3><a href="../catalogo_animali/catalogo_loggato.html" class="btn btn-link text-muted">Vai al catalogo!</a>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6 mb-2 pr-lg-1"><img src="../catalogo_animali/immagini/sfondo.jpg" alt="" class="img-fluid rounded shadow-sm"></div>
-                    <div class="col-lg-6 mb-2 pl-lg-1"><img src="../catalogo_animali/immagini/fenice.jpg" alt="" class="img-fluid rounded shadow-sm"></div>
-                    <div class="col-lg-6 pr-lg-1 mb-2"><img src="../catalogo_animali/immagini/pegaso.jpg" alt="" class="img-fluid rounded shadow-sm"></div>
-                    <div class="col-lg-6 pl-lg-1"><img src="../catalogo_animali/immagini/occamy.jpg" alt="" class="img-fluid rounded shadow-sm"></div>
+                    <div class="col-sm-4"> <img class="card-img-top" src="img/tartaruga_3.jpg" alt="Card image cap" height="200px"></div>
+                    <div class="col-sm-4"><img class="card-img-top"src="../catalogo_animali/immagini/fenice.jpg" alt="Card image cap" height="200px"></div>
+                    <div class="col-sm-4"><img class="card-img-top"src="../catalogo_animali/immagini/pegaso.jpg" alt="Card image cap" height="200px"></div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+    <footer class="page-footer font-small white" id ="piede">
+        <div class="footer-copyright text-center py-1"  style="background-color: #641C34 ;color:white">
+        </div>
+        <center>
+        <div class="section clearfix" style="background-color: #ffffff;">
+            <div class="container">
+                <div class="row lp-section-content clearfix">
+                    <div class="col-sm-12">
+                        <br>
+                        <h3>Hai ancora problemi con il tuo MagicalPet? </h3>
+                        <p>Contattaci attraverso la nostra mail di supporto.</p>
+                        <div class="calltoaction-right-panel">
+                            <a href="mailto:supportoclienti@mymagicalpet.com" class="btn btn-primary btn-lg" role="button"style="background-color: #641C34;">Contatta MyMagicalPet!</a>
+                        </div>
+                        <br>
+                    </div>      
+                </div>     
+            </div>
+        </div> </center>
+        <div class="footer-copyright text-left py-3"  style="background-color: #641C34 ;color:white"><strong>&nbsp Si ringraziano i soci </strong> John e Giorgio   .
+        </div>
 </body>
 </html>

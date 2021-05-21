@@ -19,7 +19,7 @@ $_SESSION['loggedin']=false;
 // controlla se esiste già un iscritto 
 if($num == 1){
 	session_start();
-	header('location:indexloggato.html');
+	header('location:indexloggato.php');
 	$_SESSION['loggedin']=true;
 	$_SESSION['username']= $uname;
 }

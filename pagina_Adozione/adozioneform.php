@@ -5,6 +5,7 @@ session_start();
 <!DOCTYPE html>
 <html>
     <head>
+       <link rel="icon" href="../logo.ico">
         <title>MyMagicalPet - Adozione</title>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -18,7 +19,7 @@ session_start();
 
     <body class="text-center" onload="return stampaTabellaDaStorage();">
         <nav class="navbar sticky-top" style="background-color: #641c34 ; " id="home">
-			<a class="navbar-brand" href="../indexloggato.html">
+			<a class="navbar-brand" href="../indexloggato.php">
                 <img src="../immagini/logo_small.png" height="55px" alt="150px">
             </a>
 			
@@ -27,9 +28,9 @@ session_start();
             </button>
 
 			<ul>
-				<li><a href="../indexloggato.html">Home</a></li>
-				<li><a href="../indexloggato.html#logout">Logout</a></li>
-				<li><a href="../indexloggato.html#domande">Faq</a></li>
+				<li><a href="../indexloggato.php">Home</a></li>
+				<li><a href="../indexloggato.php#logout">Logout</a></li>
+				<li><a href="../indexloggato.php#domande">Faq</a></li>
 			</ul>	
         </nav>
 
