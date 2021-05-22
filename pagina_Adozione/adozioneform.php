@@ -1,7 +1,6 @@
 <?php
 session_start();
 ?>
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,14 +9,13 @@ session_start();
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-        <script type="text/javascript" lang="javascript" src="../js/bootstrap.min.js"></script>
         <script type="text/javascript" lang="javascript" src="adozione.js"></script>
         <link rel="stylesheet" type="text/css" href="adozione.css">
     </head>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
 
-    <body class="text-center" onload="return stampaTabellaDaStorage();">
+    <body class="text-center">
         <nav class="navbar sticky-top" style="background-color: #641c34 ; " id="home">
 			<a class="navbar-brand" href="../indexloggato.php">
                 <img src="../immagini/logo_small.png" height="55px" alt="150px">
@@ -39,7 +37,7 @@ session_start();
 
       <br>
 		<div class="media">
-            <img class="mr-3" src="../img/poro3.jpg"  height="100px >
+            <img class="mr-3" src="../img/poro3.jpg"  height="100px" >
             <div class="media-body"><br>
 				<font color="white">
                 	<h1><strong><?php     
@@ -117,6 +115,8 @@ session_start();
 		</form>
 		</form>  
         </ul>
+        <br><br>  
+
     <!-- Footer -->
 
 

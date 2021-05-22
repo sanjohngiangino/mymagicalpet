@@ -12,13 +12,12 @@ session_start();
         <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="drago.css">
         
-        <script type="text/javascript" lang="javascript" src="../js/bootstrap.min.js"></script>
         <script type="text/javascript" lang="javascript" src="#"></script>
         <script src="donazione_riuscita.js"></script>
 
 
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         
 
@@ -42,6 +41,7 @@ session_start();
 
       <br><br></br>
       <h1>Donazione avvenuta con successo!</h1>
+      <br>
 
 <?php     
     if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
@@ -55,7 +55,7 @@ session_start();
  ?>
 
      
-<br><br></br>
+<br><br><br>
       
       <div class="main">
 
@@ -86,7 +86,7 @@ session_start();
       <br>
     </div>
         
-      <br><br><br><br><br>     
+      <br><br><br><br><br> <br>    <br><br>
       
       <!-- Footer -->
       <footer class="page-footer font-small white" id ="piede">
