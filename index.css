@@ -1,4 +1,6 @@
 
+/* LOGIN */
+
 .header
 {
 	height: 75vh;
@@ -9,7 +11,6 @@
 	flex-direction: column;
 }
 
-/* LOGIN */
 
 .formbox
 {
@@ -32,6 +33,7 @@
 	top: 50%;
 	left: 50%;
 }
+
 #bg {
 	background: #dfdfdf url(img/bianco.png) repeat-x top;
 	width: 960px;
@@ -54,6 +56,9 @@
 #carousel div > * {
 	position: absolute;
 }
+
+/* IMG CAROSELLO */
+
 #carousel img.img-front, 
 #carousel img.img-back{
 	box-shadow: 0 1px 10px #222; 
@@ -71,6 +76,10 @@
 	top: 60px;
 	z-index: 3;
 }
+
+
+/* FONT CAROSELLO */
+
 #carousel h3 {
 	font-size: 32px;
 	line-height:30px;
@@ -90,6 +99,9 @@
 	top: 130px;
 	margin: 0;
 }
+
+/* PULSANTE ADOTTAMI ORA*/
+
 #carousel a {
 	color: #fff;
 	font-size: 18px;
@@ -109,6 +121,9 @@
 #carousel a:hover {
 	background-color: #777;
 }
+
+/* PULSANTI PREV E NEXT */
+
 #prev, #next {
 	position: absolute;
 	top: 100px;
@@ -147,7 +162,10 @@
 	right: 26px;
 }
 
+
 /* Bottoni NavBar */
+
+
 nav ul {
   
   display: flex;
@@ -210,7 +228,10 @@ nav ul li a:hover:before {
   transform-origin: left;
   transform: scaleX(1);
 }
+
+
 /* Bottone Torna Su */
+
 #topButton {
   display: none;
   background-color: #641C34;
@@ -230,11 +251,13 @@ nav ul li a:hover:before {
   background-color: #641C34;
 }
 
+
 /*  FAQ  TABLE */
+
 .accordion
 {
  max-width: 800px;
- margin-left: 20%;
+ margin-left: 30%;
 }
 .accordion .contentBx
 {

@@ -15,11 +15,6 @@ session_start();
 		<script src="slider.js" type="text/javascript"></script>
 		<script src="js/topbutton.js"></script>
 
-		<script type="text/javascript" lang="javascript" src="js/bootstrap.min.js"></script>
-    	<script type="text/javascript" lang="javascript" src="js/bootstrap.bundle.js"></script>
-    	<script type="text/javascript" lang="javascript" src="js/bootstrap.bundle.min.js"></script>
-    	<script type="text/javascript" lang="javascript" src="logout.js"></script>
-
 		<link rel="stylesheet" type="text/css" href="index.css" />
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 
@@ -49,14 +44,9 @@ session_start();
 				<li><a href="#domande">Faq</a></li>
 				<li><a href="#piede">Contattaci</a></li>
 				<li><a href="pagina_utente/utente.php"><?php     
-							if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-							
-							echo  $_SESSION['username'];
-							// header('location:paga_terminato.html');
-						} else {
-							echo "Please log in first to see this page.";
-						}
-						
+							if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {echo  $_SESSION['username'];
+							} else { echo "Please log in first to see this page.";
+							}
 						?>
 					</a> </li>
 
@@ -125,32 +115,32 @@ session_start();
 			<a id="prev" href="#"><span></span></a>
 			<a id="next" href="#"><span></span></a>
 		</div>
-		<br id=logout>
+		<br>
 		<!-- Fine Carosello -->
 
 
 		<!--Pulsante Catalogo-->
         <a href="catalogo_animali/catalogo_loggato.html" class="btn btn-primary btn-lg" style="background-color: #641C34 " role="button" >Clicca qui per adottare un MagicalPet!!</a>
 
-		<br><br><br>
+		<br><br><br><br id=logout><br><br><br><br><br><br>
 
-	<!-- Logout-->
-	<div class="header" >
-		<div class="formbox">
-			<form action="logout.php" method="post">
-			  <form id="loginForm">
-				<br>        
-				  <div class="form-group">
-						<h2><strong>LOGOUT</strong></h2>
-					</div>
-					<br>
-					<h5> Clicca qui per effettuare il Logout! </h5>
-					<br>
-					<button type="submit" class="btn btn-primary " style ="background-color: #641C34  "> Logout </button>
-			  </form>
-			</form>
+		<!-- Logout-->
+		<div class="header" >
+			<div class="formbox">
+				<form action="logout.php" method="post">
+				<form id="loginForm">
+					<br>        
+					<div class="form-group">
+							<h2><strong>LOGOUT</strong></h2>
+						</div>
+						<br>
+						<h5> Clicca qui per effettuare il Logout! </h5>
+						<br>
+						<button type="submit" class="btn btn-primary " style ="background-color: #641C34  "> Logout </button>
+				</form>
+				</form>
+			</div>
 		</div>
-	</div>
 
 		<!-- Sezione FAQ-->
 		<br id=domande><br>	 <br><br>

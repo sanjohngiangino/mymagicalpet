@@ -2,7 +2,7 @@
 il login funziona come registrazione.php-->
 <?php
 
-$dbconn =pg_connect("host=localhost port=5432 dbname=postgres user=mymagicalpets password=password")
+$dbconn =pg_connect("host=localhost port=5432 dbname=postgres user=postgres password=password")
 or die('Could not connect: ' .pg_last_error());
 
 
@@ -26,6 +26,6 @@ if($num == 1){
 else{
 	session_destroy();
 	$_SESSION['loggedin']=false;
-	header('location:index.html');
+	header('location:loginfallito.html');
 }
 ?>

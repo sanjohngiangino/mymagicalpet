@@ -6,7 +6,7 @@
 	
         $dbconn =pg_connect("host=localhost port=5432 
             dbname=postgres
-             user=mymagicalpets password=password")
+             user=postgres password=password")
         or die('Could not connect: ' .pg_last_error());
 
 // variabili di tipo post che prendono in input i dati dalla form registrazione.html
